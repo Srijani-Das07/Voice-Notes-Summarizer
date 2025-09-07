@@ -49,7 +49,7 @@ Step-by-step process:
 - Record audio directly in the browser.  
 - Translate transcriptions into multiple languages.
 
-Author 
+## Author 
 
 [Srijani Das](https://github.com/Srijani-Das07)
 
