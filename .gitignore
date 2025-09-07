@@ -58,3 +58,6 @@ logs/
 dist/
 build/
 *.egg-info/
+
+# Dev container (Codespaces / VSCode Remote Containers)
+.devcontainer/
