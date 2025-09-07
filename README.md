@@ -4,7 +4,7 @@
 
 ## Description
 
-Voice Notes Summarizer converts audio files into full transcriptions and AI-generated summaries. Summaries can be produced in Short, Medium, or Detailed lengths. Both the transcript and summaries can be downloaded as text files. All processing is done on the device, ensuring audio privacy without the need for API keys or external servers.
+Voice Notes Summarizer converts audio files into full transcriptions and AI-generated summaries. Summaries can be generated in Short, Medium, or Detailed lengths. Both the transcript and summary can be downloaded as text files. All processing is performed on the device, ensuring audio privacy without requiring API keys or external servers.
 
 ## How It Works
 
@@ -18,13 +18,13 @@ Step-by-step process:
 
 ## Tech Stack
 
-| Feature/Component        | Technology Used                       |
+| **Feature/Component**        | **Technology Used**                       |
 |--------------------------|--------------------------------------|
 | Programming Language      | Python                               |
 | Web Interface             | Streamlit                            |
 | Speech Recognition        | OpenAI Whisper                       |
 | Text Summarization        | HuggingFace BART                     |
-| Backend Framework         | PyTorch                              |
+| Model Backend             | PyTorch                              |
 
 ## Setup
 
@@ -44,11 +44,11 @@ Step-by-step process:
 
 ## Security & Privacy
 
-- ✅ Processing occurs entirely on the device.  
-- ✅ No API keys or external services required.  
+- ✅ All processing is performed on the device.  
+- ✅ No API keys or external services are required.  
 - ✅ Open source models ensure transparency and auditability.  
 
 ## Future Features
 
 - Record audio directly from the browser.  
-- Support translation of transcription into multiple languages
+- Support translation of transcriptions into multiple languages.
