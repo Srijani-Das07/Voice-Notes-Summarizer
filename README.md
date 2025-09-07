@@ -1,7 +1,5 @@
 # 🎙️ Voice Notes Summarizer
 
-[Try it live!](https://voice-notes-summarizer-hkaxkgyj9zvv6zesunccfa.streamlit.app/)
-
 ## Description
 
 Voice Notes Summarizer converts audio files into full transcriptions and AI-generated summaries. Summaries can be generated in Short, Medium, or Detailed lengths. Both the transcript and summary can be downloaded as text files. All processing is performed on the device, ensuring audio privacy without requiring API keys or external servers.
@@ -50,5 +48,6 @@ Step-by-step process:
 
 ## Future Features
 
-- Record audio directly from the browser.  
-- Support translation of transcriptions into multiple languages.
+- Record audio directly in the browser.  
+- Translate transcriptions into multiple languages.
+
