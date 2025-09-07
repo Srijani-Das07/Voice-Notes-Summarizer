@@ -18,10 +18,4 @@ A secure, local voice transcription and summarization app using OpenAI Whisper.
 - ✅ **No External Data Transfer** - Your audio never leaves your computer  
 - ✅ **Open Source Models** - Transparent and auditable code
 
-### Security Features:
-- 100% Local Processing - All transcription happens on your machine
-- No API Keys Required - No risk of key compromise
-- No External Data Transfer - Your audio never leaves your computer
-- Open Source Models - Transparent and auditable code
-
 *Recording feature coming soon!*
