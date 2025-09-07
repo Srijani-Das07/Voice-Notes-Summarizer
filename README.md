@@ -37,6 +37,18 @@ Step-by-step process:
     ```bash
     python -m streamlit run app.py
     ```
+## Preview
+
+<p align="center">
+  <img src="preview1.png" width="40%" />
+  <img src="preview2.png" width="40%" />
+</p>
+
+<p align="center">
+  <img src="preview3.png" width="40%" />
+  <img src="preview4.png" width="40%" />
+</p>
+
 
 ## Security & Privacy
 
