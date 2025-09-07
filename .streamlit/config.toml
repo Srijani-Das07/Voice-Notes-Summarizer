@@ -1,0 +1,38 @@
+[theme]
+# App theme colors
+primaryColor = "#cc5555"           # Accent color for buttons, links
+backgroundColor = "#f5f5dc"        # Main background
+secondaryBackgroundColor = "#f0f0e6"  # Sidebar, containers background
+textColor = "#000000"             # Main text color
+
+[server]
+# File upload settings
+maxUploadSize = 10                # Max file size in MB 
+enableCORS = false               # Cross-origin requests
+enableXsrfProtection = true      # Security protection
+
+# Performance settings
+maxMessageSize = 200             # Max message size in MB
+enableWebsocketCompression = true # Compress websocket messages
+
+[browser]
+# Browser behavior
+gatherUsageStats = false         # Don't send usage stats to Streamlit
+serverAddress = "localhost"      # Server address
+serverPort = 8501               # Default Streamlit port
+
+[global]
+# Development settings
+developmentMode = false          # Set to true during development
+logLevel = "info"               # Logging level: "error", "warning", "info", "debug"
+suppressDeprecationWarnings = true # Hide deprecation warnings
+showWarningOnDirectExecution = false # Don't warn about direct execution
+
+[client]
+# UI behavior
+showErrorDetails = true          # Show detailed error messages
+toolbarMode = "minimal"         # Toolbar display: "auto", "developer", "viewer", "minimal"
+
+# Performance
+caching = true                  # Enable caching
+allowRunOnSave = true          # Auto-rerun on file changes (dev only)

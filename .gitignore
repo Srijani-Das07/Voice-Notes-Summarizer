@@ -1,0 +1,60 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Streamlit specific
+.streamlit/secrets.toml
+
+# Temporary audio files (generated during processing)
+*.tmp
+*.temp
+temp_*
+tmp_*
+
+# Test audio files
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+
+# Model cache (Whisper and transformers download models here)
+~/.cache/whisper/
+~/.cache/huggingface/
+.cache/
+
+# Jupyter notebooks 
+*.ipynb_checkpoints/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/

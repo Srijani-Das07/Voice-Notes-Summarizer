@@ -1,0 +1,9 @@
+streamlit>=1.28.0
+openai-whisper>=20231117
+torch>=2.0.0
+torchaudio
+transformers
+soundfile
+numpy
+ffmpeg-python
+streamlit-webrtc
