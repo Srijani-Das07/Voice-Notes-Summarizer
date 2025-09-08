@@ -6,5 +6,4 @@ transformers
 soundfile
 numpy
 ffmpeg-python
-ffmpeg
 streamlit-webrtc
