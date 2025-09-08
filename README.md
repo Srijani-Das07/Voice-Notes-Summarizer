@@ -20,7 +20,7 @@ Step-by-step process:
 | Web Interface             | Streamlit                            |
 | Speech Recognition        | OpenAI Whisper                       |
 | Text Summarization        | HuggingFace BART                     |
-| Framework                 | PyTorch                              |
+| Model Backend             | PyTorch                              |
 
 ## Setup
 
@@ -67,5 +67,5 @@ Step-by-step process:
 
 ## License
 
-This project is licensed under the [MIT LICENSE](LICENSE)
+This project is licensed under the [MIT License](LICENSE)
 
