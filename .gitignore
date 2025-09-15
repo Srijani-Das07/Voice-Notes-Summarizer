@@ -1,42 +1,38 @@
 # Python cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.pdb
+*.py[cod]
 
 # Virtual environment
 venv/
 env/
 .venv/
 
-# Environment files
+# Environment / secrets
 .env
 .env.local
 .env.production
-
-# Streamlit specific
 .streamlit/secrets.toml
+config.json
 
-# Temporary audio files (generated during processing)
+# Temporary / generated files
 *.tmp
 *.temp
 temp_*
 tmp_*
+*.log
+logs/
 
-# Test audio files
-*.wav
-*.mp3
-*.m4a
-*.flac
-*.ogg
+# Audio files
+# Ignore large user-uploaded samples, but allow tiny demo clips
+audio_samples/*
+!docs/examples/*.wav
 
-# Model cache (Whisper and transformers download models here)
-~/.cache/whisper/
-~/.cache/huggingface/
+# Model cache
 .cache/
+whisper/
+huggingface/
 
-# Jupyter notebooks 
+# Jupyter notebooks
 *.ipynb_checkpoints/
 
 # OS specific
@@ -49,10 +45,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
-
-# Logs
-*.log
-logs/
 
 # Distribution / packaging
 dist/
