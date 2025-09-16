@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Animated gradient background with moving particles */
+.stApp {
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(135,206,250,0.2) 0%, transparent 20%),
+        radial-gradient(circle at 80% 70%, rgba(173,216,230,0.15) 0%, transparent 25%),
+        radial-gradient(circle at 40% 60%, rgba(255,255,255,0.12) 0%, transparent 15%),
+        radial-gradient(circle at 70% 20%, rgba(100,149,237,0.18) 0%, transparent 18%),
+        linear-gradient(-45deg, #000510, #001122, #000816, #001a2e);
+    background-size: 300px 300px, 400px 400px, 200px 200px, 350px 350px, 400% 400%;
+    animation: 
+        gradientShift 15s ease infinite,
+        moveParticles1 25s linear infinite,
+        moveParticles2 30s linear infinite reverse,
+        moveParticles3 20s linear infinite,
+        moveParticles4 35s linear infinite reverse;
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%, 0% 0%, 0% 0%, 0% 0%, 0% 50%; }
+    50% { background-position: 100% 50%, 100% 100%, 50% 50%, 100% 0%, 100% 50%; }
+    100% { background-position: 0% 50%, 0% 0%, 0% 0%, 0% 0%, 0% 50%; }
+}
+
+@keyframes moveParticles1 {
+    0% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 50%; }
+    100% { background-position: 100% 100%, 0% 0%, 0% 0%, 0% 0%, 0% 50%; }
+}
+
+@keyframes moveParticles2 {
+    0% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 50%; }
+    100% { background-position: 0% 0%, 100% 100%, 0% 0%, 0% 0%, 0% 50%; }
+}
+
+@keyframes moveParticles3 {
+    0% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 50%; }
+    100% { background-position: 0% 0%, 0% 0%, 100% 100%, 0% 0%, 0% 50%; }
+}
+
+@keyframes moveParticles4 {
+    0% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 50%; }
+    100% { background-position: 0% 0%, 0% 0%, 0% 0%, 100% 100%, 0% 50%; }
+}
+
+/* Enhanced container styling */
+.main .block-container {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(135, 206, 250, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem auto;
+    box-shadow: 
+        0 8px 32px rgba(30, 144, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    max-width: 70%;
+    width: 70%;
+}
+.step-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(135, 206, 250, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 210, 255, 0.1);
+}
+
+/* Glowing title */
+h1 {
+    color: #ffffff !important;
+    text-align: center !important;
+    font-size: 2.5rem !important;
+    text-shadow: 
+        0 0 20px rgba(135, 206, 250, 0.5),
+        2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+    margin-bottom: 30px !important;
+    animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+    from { text-shadow: 0 0 20px rgba(135, 206, 250, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.8); }
+    to { text-shadow: 0 0 30px rgba(135, 206, 250, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.8); }
+}
+
+/* Enhanced buttons */
+.stButton > button {
+    background: rgba(255, 255, 255, 0.02) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05) !important;
+    max-width: 250px !important;
+    width: 250px !important;
+    margin: 0 auto !important;
+}
+
+.stButton > button:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Download buttons */
+.stDownloadButton > button {
+    background: linear-gradient(135deg, #80aef0, #87d8eb) !important;
+    color: white !important;
+    border: 1px solid rgba(135, 206, 250, 0.4) !important;
+    border-radius: 12px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(0, 77, 64, 0.4) !important;
+}
+
+.stDownloadButton > button:hover {
+    background: linear-gradient(135deg, #86dbee, #80a7dd) !important;
+    box-shadow: 0 8px 25px rgba(38, 166, 154, 0.5) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Enhanced input areas */
+.stTextArea textarea {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(135, 206, 250, 0.25) !important;
+    border-radius: 12px !important;
+    color: #e3f2fd !important;
+    padding: 1rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+/* Status messages glow */
+.stAlert {
+    border-radius: 12px !important;
+    backdrop-filter: blur(10px) !important;
+    animation: statusGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes statusGlow {
+    from { box-shadow: 0 0 20px rgba(135, 206, 250, 0.2); }
+    to { box-shadow: 0 0 30px rgba(135, 206, 250, 0.4); }
+}
+
+/* File uploader styling */
+.stFileUploader > div {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 2px dashed rgba(255, 255, 255, 0.3) !important;
+    border-radius: 15px !important;
+    padding: 20px !important;
+    transition: all 0.3s ease !important;
+}
+
+.stFileUploader > div:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(135, 206, 250, 0.3) !important;
+}
+
+/* Subheader styling */
+h2, h3 {
+    color: #e3f2fd !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+    text-shadow: 0 0 10px rgba(135, 206, 250, 0.3) !important;
+}
+
+/* Text and labels */
+.stMarkdown, label {
+    color: #e3f2fd !important;
+}
+
+/* Spinner animation enhancement */
+.stSpinner > div {
+    border-color: rgba(135, 206, 250, 0.3) rgba(135, 206, 250, 0.3) rgba(135, 206, 250, 1) rgba(135, 206, 250, 0.3) !important;
+}
+
+/* Success messages */
+.stSuccess {
+    background: rgba(0, 210, 255, 0.1) !important;
+    border: 1px solid rgba(0, 210, 255, 0.3) !important;
+    color: #b3ecff !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+/* Error messages */
+.stError {
+    background: rgba(255, 77, 109, 0.12) !important;
+    border: 1px solid rgba(255, 77, 109, 0.3) !important;
+    color: #ffcdd2 !important;
+    box-shadow: 0 0 25px rgba(255, 80, 80, 0.3) !important;
+}
+
+/* Warning messages */
+.stWarning {
+    background: rgba(255, 214, 102, 0.12) !important;
+    border: 1px solid rgba(255, 204, 128, 0.4) !important;
+    color: #fff3cd !important;
+    box-shadow: 0 0 25px rgba(255, 214, 102, 0.3) !important;
+}
