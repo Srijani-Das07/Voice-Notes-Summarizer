@@ -5,6 +5,24 @@ from transformers import pipeline
 import torch
 import os
 
+# ------------------- Page Configuration -------------------
+st.set_page_config(page_title="Voice Notes Summarizer", layout="wide")
+
+# ------------------- Load CSS -------------------
+def load_css(file_name):
+    try:
+        with open(file_name, 'r') as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    except FileNotFoundError:
+        # Fallback minimal styling if CSS file not found
+        st.markdown("""
+        <style>
+        .stApp { background: linear-gradient(-45deg, #000510, #001122); }
+        </style>
+        """, unsafe_allow_html=True)
+
+load_css('animated_styles.css')
+
 # ------------------- Configuration -------------------
 CONFIG = {
     'MAX_FILE_SIZE': 10 * 1024 * 1024,

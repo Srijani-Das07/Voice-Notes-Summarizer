@@ -14,13 +14,13 @@ Step-by-step process:
 
 ## Tech Stack
 
-| **Feature/Component**        | **Technology Used**                       |
-|--------------------------|--------------------------------------|
-| Programming Language      | Python                               |
-| Web Interface             | Streamlit                            |
-| Speech Recognition        | OpenAI Whisper                       |
-| Text Summarization        | HuggingFace BART                     |
-| Model Backend             | PyTorch                              |
+| **Feature/Component**     | **Technology Used**                 |
+|---------------------------|-------------------------------------|
+| Programming Language      | Python                              |
+| Web Interface             | Streamlit + CSS                     |
+| Speech Recognition        | OpenAI Whisper                      |
+| Text Summarization        | HuggingFace BART                    |
+| Model Backend             | PyTorch                             |
 
 ## Setup
 
